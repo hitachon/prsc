@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "233700559130",
+    "firebase_url": "https://omgabtc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "omgabtc",
+    "storage_bucket": "omgabtc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233700559130:android:b08f47f8b69c1a482ac4a3",
+        "android_client_info": {
+          "package_name": "com.example.dai_tuong_le_duc_anh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk2_PXzA5jiHIEJiukWb17tFOhPFhHq4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
