@@ -11,9 +11,9 @@ class MemeDetail extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(colors: [
-            myColor,
-            Colors.orange,
-          ])),
+        myColor,
+        Colors.orange,
+      ])),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -21,31 +21,33 @@ class MemeDetail extends StatelessWidget {
           title: Text(meme["name"]),
           elevation: 0.0,
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Image.network(meme["url"]),
-              SizedBox(
-                height: 30.0,
-              ),
-              Text(
-                "ID: ${meme["id"]}",
-                style: TextStyle(
-                  color: Colors.white,
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Image.network(meme["url"]),
+                SizedBox(
+                  height: 30.0,
                 ),
-              ),
-              SizedBox(
-                height: 30.0,
-              ),
-              Text(
-                "${meme["name"]}",
-                style: TextStyle(
-                  fontSize: 22,
-                  color: Colors.white,
+                Text(
+                  "ID: ${meme["id"]}",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                 ),
-              )
-            ],
+                SizedBox(
+                  height: 30.0,
+                ),
+                Text(
+                  "${meme["name"]}",
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.white,
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
