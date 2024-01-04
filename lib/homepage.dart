@@ -34,56 +34,56 @@ class _HomePageState extends State<HomePage> {
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(colors: [
-            myColor,
-            Colors.orange,
-          ])),
+        myColor,
+        Colors.orange,
+      ])),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-          title: Text("Dai Tuong Le Duc Anh"),
+          title: Text("App Memes"),
           elevation: 0.0,
           backgroundColor: Colors.transparent,
         ),
         body: Center(
           child: res != null
               ? ListView.builder(
-            itemCount: memes.length,
-            itemBuilder: (context, index) {
-              var meme = memes[index];
-              return ListTile(
-                leading: Hero(
-                  tag: meme["id"],
-                  child: CircleAvatar(
-                    backgroundImage: NetworkImage(
-                      meme["url"] ??
-                          "http://www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg",
-                    ),
-                  ),
-                ),
-                title: Text(
-                  "${meme["name"]}",
-                  style: TextStyle(
-                    fontSize: 22,
-                    color: Colors.white,
-                  ),
-                ),
-                subtitle: Text(
-                  "${meme["id"]}",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MemeDetail(meme: meme),
-                    ),
-                  );
-                },
-              );
-            },
-          )
+                  itemCount: memes.length,
+                  itemBuilder: (context, index) {
+                    var meme = memes[index];
+                    return ListTile(
+                      leading: Hero(
+                        tag: meme["id"],
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                            meme["url"] ??
+                                "http://www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg",
+                          ),
+                        ),
+                      ),
+                      title: Text(
+                        "${meme["name"]}",
+                        style: TextStyle(
+                          fontSize: 22,
+                          color: Colors.white,
+                        ),
+                      ),
+                      subtitle: Text(
+                        "${meme["id"]}",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MemeDetail(meme: meme),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                )
               : CircularProgressIndicator(backgroundColor: Colors.white),
         ),
       ),
