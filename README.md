@@ -1,7 +1,3 @@
-# dai_tuong_le_duc_anh
-
-App thong bao gio cry cry cry fap cry
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
