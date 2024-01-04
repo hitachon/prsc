@@ -6,7 +6,6 @@ import '../controller.dart';
 import '../dialog.dart';
 import '../firebase_constant.dart';
 import 'singup_controller.dart';
-import 'package:dai_tuong_le_duc_anh/homepage.dart';
 
 class CheckBoxLoginController extends GetxController {
   RxBool checkBoxVal = false.obs;
