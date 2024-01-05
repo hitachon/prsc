@@ -1,12 +1,9 @@
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+B1: Cài FireBase vào máy (https://firebase.google.com/docs/cli)
+B2: Tạo project trên web https://console.firebase.google.com/u/0/
+B3: Vào authentication, tạo Authentication, chọn email
+B4: Đăng nhập bằng cmd firebase login
+B5: Sau khi login, chạy dòng lệnh dart pub global activate flutterfile_cli 
+B6: Vào folder chương trình đã tải, chạy console trong folder (nhập cmd lên thanh địa chỉ), dùng lệnh flutterfire configure, chọn project đã tạo trên firebase
+B7: Chạy lênh flutter pub add firebase_core
+B8: Chạy lệnh flutterfire configure
+B9: Sau đó vào chương trình chạy flutter run để chạy lại chương trình.
